@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="2dp">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/mCoordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvImoveis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"/>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabSalvar"
+            app:fabSize="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/ic_add_black"
+            app:backgroundTint="@color/FlotActionButton"
+            app:elevation="2dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:onClick="cadastrarImovel"/>
+
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</LinearLayout>
